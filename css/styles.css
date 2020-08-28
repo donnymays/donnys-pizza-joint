@@ -8,14 +8,23 @@ h1 {
   color: #f6da63;
 }
 
-h2{
+h2 {
   font-family: "Montserrat";
   color: #9d0b0b;
   text-align: center;
+}
 
+h3 {
+  font-family: "Montserrat";
+  color: #da2d2d;
 }
 
 p {
+  font-family: "Montserrat";
+  color: #da2d2d;
+}
+
+label {
   font-family: "Montserrat";
   color: #da2d2d;
 }
@@ -54,6 +63,7 @@ hr {
 }
 
 #second-pizza-form {
+  padding-top: 25px;
   display: none;
 }
 
