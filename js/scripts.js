@@ -30,8 +30,7 @@ $(document).ready(function()  {
     
     let orderTotal = pizzaOrdered.pizzaTotal(pizzaOrdered.toppings);
     
-   
-    $("#totalPrice").append(orderTotal)
+    $("span#totalPrice").append(orderTotal)
 
  
   });
