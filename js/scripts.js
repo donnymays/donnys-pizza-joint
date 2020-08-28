@@ -21,7 +21,7 @@ $(document).ready(function()  {
   
     let inputtedAddress = $("input#address").val();
     let inputtedName = $("input#name").val();
-    let inputtedSize = parseInt($("input:radio[name=size]:checked").val());
+    let inputtedSize = parseInt($("input:radio[name=size]:checked").val()) + parseInt($("input:radio[name=size2]:checked").val()); 
     let pizzaOrdered = new PizzaOrder(inputtedSize);
     
     $("input#address").val("");
@@ -33,8 +33,8 @@ $(document).ready(function()  {
     
     let orderTotal = pizzaOrdered.pizzaTotal(pizzaOrdered.toppings);
     
-      $("span#order-name").text(inputtedName);
-      $("span#totalPrice").text(orderTotal);
-      $("span#delivery-address").text(inputtedAddress); 
+    $("span#order-name").text(inputtedName);
+    $("span#totalPrice").text(orderTotal);
+    $("span#delivery-address").text(inputtedAddress);
   });
 });
