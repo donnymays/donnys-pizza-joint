@@ -16,7 +16,7 @@ $(document).ready(function()  {
   $("#second-pizza").click(function () {
     $("#second-pizza-form").show();
   });
-  $("#pizzaForm").submit(function (event) {
+  $("#order-button").click(function (event) {
     event.preventDefault();
   
     let inputtedAddress = $("input#address").val();
