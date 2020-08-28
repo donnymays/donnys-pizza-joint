@@ -13,8 +13,8 @@ PizzaOrder.prototype.pizzaTotal = function(toppingArr) {
 };
 
 $(document).ready(function()  {
-  $("#second-pizza").click(function () {
-    $("#second-pizza-form").show();
+  $("#second-pizza").on("click", function () {
+    $("#second-pizza-form").toggle();
   });
   $("#order-button").click(function (event) {
     event.preventDefault();
@@ -33,10 +33,9 @@ $(document).ready(function()  {
     
     let orderTotal = pizzaOrdered.pizzaTotal(pizzaOrdered.toppings);
     
-    $("span#order-name").text(inputtedName)
-    $("span#totalPrice").text(orderTotal)
-    $("span#delivery-address").text(inputtedAddress)
-    $("div#price-footer").show();
+    $("span#order-name").text(inputtedName);
+    $("span#totalPrice").text(orderTotal);
+    $("span#delivery-address").text(inputtedAddress);
 
  
   });
