@@ -15,9 +15,14 @@ PizzaOrder.prototype.pizzaTotal = function(toppingArr) {
 
 
 $(document).ready(function()  {
+  $("#second-pizza").click(function () {
+    $("#second-pizza-form").show();
+  });
   $("#pizzaForm").submit(function (event) {
     event.preventDefault();
     
+
+
     let inputtedAddress = $("input#address").val();
     let inputtedName = $("input#name").val();
     let inputtedSize = parseInt($("input:radio[name=size]:checked").val());
@@ -32,6 +37,8 @@ $(document).ready(function()  {
     
     let orderTotal = pizzaOrdered.pizzaTotal(pizzaOrdered.toppings);
     
+   
+
     $("span#order-name").text(inputtedName)
     $("span#totalPrice").text(orderTotal)
     $("span#delivery-address").text(inputtedAddress)

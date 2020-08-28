@@ -42,7 +42,8 @@ hr {
   text-align: center;
 }
 
-#order-button {
+#buttons {
+  text-align: center;
   margin-top: 15px;
 }
 
