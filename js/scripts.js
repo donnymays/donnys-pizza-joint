@@ -3,7 +3,7 @@ function PizzaOrder(toppings, size) {
   this.size = size;
 }
 
-PizzaOrder.prototype.orderTotal = funtion() {
+PizzaOrder.prototype.orderTotal = function() {
   let basePrice = 12;
   if (this.size === "Medium") {
     basePrice += 3;
