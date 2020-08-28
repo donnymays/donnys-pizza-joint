@@ -15,14 +15,14 @@ PizzaOrder.prototype.pizzaTotal = function(toppingArr) {
 
 
 $(document).ready(function()  {
-  $("pizzaForm").submit(function (event) {
+  $("#pizzaForm").submit(function (event) {
     event.preventDefault();
     
     
 
     let inputtedSize = parseInt($("input:radio[name=size]:checked").val());
     
-    let pizzaOrdered = new PizzaOrder(inputtedSize, toppings);
+    let pizzaOrdered = new PizzaOrder(inputtedSize);
     
     $("input:checkbox[name=toppings]:checked").each(function(){
       pizzaOrdered.toppings.push(parseInt($(this).val()));
