@@ -1,6 +1,7 @@
 function PizzaOrder(toppings, size) {
   this.toppings = [];
   this.size = size;
+  this.total = this.pizzaTotal();
 }
 
 PizzaOrder.prototype.pizzaTotal = function(toppingArr) {
@@ -8,13 +9,10 @@ PizzaOrder.prototype.pizzaTotal = function(toppingArr) {
   for (i=0; i<toppingArr.length; i++) {
     toppingTotal += toppingArr[i];
   }
+  
   let pizzaTotal = toppingTotal + this.size;
   return pizzaTotal;
 }
-
-
-
-
 
 $(document).ready(function()  {
   $("pizzaForm").submit(function (event) {
@@ -22,10 +20,13 @@ $(document).ready(function()  {
  
     let size = parseInt($("sizeSelect")).val();
     let pizza = new PizzaOrder(size, toppings);
+    let toppings = [];
+    
     $("input:checkbox[name=toppings]:checked").each(function() {
       pizza.toppings.push(parseInt($(this).val()));
-      console.log(toppings);
+      alert(pizza.toppings);
     });
+    
     let pizzaPrice = pizza.pizzaTotal(toppings);
     console.log(pizzaPrice);
 
