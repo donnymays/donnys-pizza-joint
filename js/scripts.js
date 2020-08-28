@@ -18,9 +18,13 @@ $(document).ready(function()  {
   $("#pizzaForm").submit(function (event) {
     event.preventDefault();
     
+    let inputtedAddress = $("input#address").val();
+    let inputtedName = $("input#name").val();
     let inputtedSize = parseInt($("input:radio[name=size]:checked").val());
-    
     let pizzaOrdered = new PizzaOrder(inputtedSize);
+    
+    $("input#address").val("");
+    $("input#name").val("");
     
     $("input:checkbox[name=toppings]:checked").each(function(){
       pizzaOrdered.toppings.push(parseInt($(this).val()));
@@ -28,7 +32,10 @@ $(document).ready(function()  {
     
     let orderTotal = pizzaOrdered.pizzaTotal(pizzaOrdered.toppings);
     
-    $("span#totalPrice").append(orderTotal)
+    $("span#order-name").text(inputtedName)
+    $("span#totalPrice").text(orderTotal)
+    $("span#delivery-address").text(inputtedAddress)
+    $("div#price-footer").show();
 
  
   });

@@ -45,3 +45,17 @@ hr {
 #order-button {
   margin-top: 15px;
 }
+
+#price-footer {
+  text-align: center;
+  background-color: #9d0b0b;
+  display: none;
+}
+
+#second-pizza-form {
+  display: none;
+}
+
+.total-dollars, .dollar-sign {
+  color: #f6da63;
+}

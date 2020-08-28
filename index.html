@@ -75,17 +75,70 @@
           </div>
         </div>
         <div class="col-md-12 text-center">
-          <button type="submit" class="btn btn-outline-danger" id="order-button">Order!</button>   
+          <button type="button" class="btn btn-outline-danger" id="second-pizza">Add a Second Pizza!</button>   
+          <button type="submit" class="btn btn-danger" id="order-button">Order!</button>
+             
         </div>
+
+        <div class="form-group" id="second-pizza-form">
+          <div class="size-radios">
+            <h2>Please Select a Size</h2>
+            <label class="radio-inline">
+              <input type="radio" name="size" value="12" checked>
+              Small
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="size" value="16">
+              Medium
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="size" value="20">
+              Large
+            </label><br>
+          </div>
+          <hr>
+            <h2>Please Select Your Toppings</h2>
+            <div class="row">
+              <div class="col-6">
+                <p>Basic Toppings:</p>
+                <input type="checkbox" id="peppers" name="toppings" value="2">
+                <label for="peppers">Banana Peppers</label><br>
+                <input type="checkbox" id="mushrooms" name="toppings" value="2">
+                <label for="mushrooms">Mushrooms</label><br>
+                <input type="checkbox" id="onioins" name="toppings" value="2">
+                <label for="onions">Onions</label><br>
+                <input type="checkbox" id="spinach" name="toppings" value="2">
+                <label for="spinach">Spinach</label><br>
+                <input type="checkbox" id="tomatoes" name="toppings" value="2">
+                <label for="tomatoes">Tomatoes</label><br>
+              </div>
+              <div class="col-6">
+                <p>Premium Toppings</p>      
+                <input type="checkbox" id="pepperoni" name="toppings" value="3">
+                <label for="pepperoni">Pepperoni</label><br>
+                <input type="checkbox" id="sausage" name="toppings" value="3">
+                <label for="sausage">Sausage</label><br>
+                <input type="checkbox" id="ham" name="toppings" value="3">
+                <label for="ham">Ham</label><br>
+                <input type="checkbox" id="arugula" name="toppings" value="2">
+                <label for="arugula">Arugula</label><br>
+                <input type="checkbox" id="goat-cheese" name="toppings" value="2">
+                <label for="goat-cheese">Goat Cheese</label><br>
+                
+              </div>
+            </div>
+       
         
         <hr>
       </div>
       
     </div>
-  </form> 
-  <div>
-    <p><span id="totalPrice"></span></p>
-  </div>
- 
+  </form>
+</div> 
+<div class="container" id="price-footer">
+  <h1>Thank You for Your Order, <span id="order-name"></span></h1>
+  <p>Your order total is: <span class="dollar-sign">$</span><strong><em><span class="total-dollars" id="totalPrice"></span></em></strong> . We'll have your order delivered to <strong><span id="delivery-address"></span></strong> in approximately 30 minutes!</p>
 </div>
+ 
+
 </body>
