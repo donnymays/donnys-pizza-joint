@@ -2,18 +2,28 @@ body {
   background-color: #eb8242;
 }
 
-.jumbotron {
-  background-color: #9d0b0b;
-  text-align: center;
-}
-
 h1 {
   font-family: "Pacifico";
   font-size: 72px;
   color: #f6da63;
 }
 
+h2{
+  font-family: "Montserrat";
+  color: #9d0b0b;
+
+}
+
 p {
   font-family: "Montserrat";
   color: #da2d2d;
+}
+
+.jumbotron {
+  background-color: #9d0b0b;
+  text-align: center;
+}
+
+.size-radios {
+  text-align: center;
 }
