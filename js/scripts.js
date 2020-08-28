@@ -20,8 +20,16 @@ $(document).ready(function()  {
   $("pizzaForm").submit(function (event) {
     event.preventDefault();
  
+    let size = parseInt($("sizeSelect")).val();
+    let pizza = new PizzaOrder(size, toppings);
+    $("input:checkbox[name=toppings]:checked").each(function() {
+      pizza.toppings.push(parseInt($(this).val()));
+      console.log(toppings);
+    });
+    let pizzaPrice = pizza.pizzaTotal(toppings);
+    console.log(pizzaPrice);
 
-    $("#totalPrice").append();
+    $("#totalPrice").append(pizzaPrice);
 
  
   });
