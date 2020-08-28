@@ -14,3 +14,11 @@ PizzaOrder.prototype.orderTotal = funtion() {
   }
   return basePrice;
 }
+
+
+$(document).ready(function () {
+  $("").submit(function (event) {
+    event.preventDefault();
+ 
+  });
+});
