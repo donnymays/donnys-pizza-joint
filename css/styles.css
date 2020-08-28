@@ -43,6 +43,14 @@ hr {
   text-align: center;
 }
 
+.card-header {
+  font-family: "Pacifico";
+}
+
+.card {
+  background-color: #f6da63;
+}
+
 .row {
   text-align: center;
 }
