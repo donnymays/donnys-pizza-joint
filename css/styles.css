@@ -11,6 +11,7 @@ h1 {
 h2{
   font-family: "Montserrat";
   color: #9d0b0b;
+  text-align: center;
 
 }
 
@@ -19,11 +20,28 @@ p {
   color: #da2d2d;
 }
 
+hr {
+  border-color: #da2d2d;
+  border-style: dotted none none;
+  height: 0;
+  width: 10%;
+  border-width: 8px;
+  margin: 30px auto;
+}
+
 .jumbotron {
   background-color: #9d0b0b;
   text-align: center;
 }
 
+.row {
+  text-align: center;
+}
+
 .size-radios {
   text-align: center;
+}
+
+#order-button {
+  margin-top: 15px;
 }
