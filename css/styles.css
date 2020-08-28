@@ -74,6 +74,10 @@ hr {
   border-radius: 15px;;
 }
 
+.mega-wait {
+  display: none;
+}
+
 #second-pizza-form {
   padding-top: 25px;
   display: none;

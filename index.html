@@ -24,9 +24,10 @@
           <h3>Sizes</h3>
         </div>
         <div class="card-body">
-          <p>Small - $12</p>
-          <p>Medium - $16</p>
-          <p>Large - $20</p>
+          <p>Small - 8" - $12</p>
+          <p>Medium - 10" - $16</p>
+          <p>Large - 12" - $20</p>
+          <p>MEGA PIZZA - 2' - $30</p>
         </div>
       </div>
     </div>
@@ -85,6 +86,10 @@
           <input type="radio" name="size" value="20">
           Large
         </label><br>
+        <label class="radio-inline">
+          <input id="mega-pizza" type="radio" name="size" value="30">
+          MEGA PIZZA
+        </label><br>
       </div>
       <hr>
         <h2>Please Select Your Toppings</h2>
@@ -136,6 +141,10 @@
               <input type="radio" name="size" value="20">
               Large
             </label><br>
+            <label class="radio-inline">
+              <input id="mega-pizza" type="radio" name="size" value="30">
+              MEGA PIZZA
+            </label><br>
           </div>
           <hr>
             <h2>Please Select Your Toppings</h2>
@@ -184,7 +193,7 @@
       </div>
       <div class="modal-body">
         <h1>Thank You for Your Order, <span id="order-name"></span></h1>
-        <p>Your order total is: <span class="dollar-sign">$</span><strong><em><span class="total-dollars" id="totalPrice"></span></em></strong> . We'll have your order delivered to <strong><span id="delivery-address"></span></strong> in approximately 30 minutes!</p>
+        <p>Your order total is: <span class="dollar-sign">$</span><strong><em><span class="total-dollars" id="totalPrice"></span></em></strong> . We'll have your order delivered to <strong><span id="delivery-address"></span></strong> in approximately <span class="mega-wait">One Hour & </span> 30 minutes!</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

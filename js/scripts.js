@@ -33,10 +33,8 @@ $(document).ready(function()  {
     
     let orderTotal = pizzaOrdered.pizzaTotal(pizzaOrdered.toppings);
     
-    $("span#order-name").text(inputtedName);
-    $("span#totalPrice").text(orderTotal);
-    $("span#delivery-address").text(inputtedAddress);
-
- 
+      $("span#order-name").text(inputtedName);
+      $("span#totalPrice").text(orderTotal);
+      $("span#delivery-address").text(inputtedAddress); 
   });
 });
