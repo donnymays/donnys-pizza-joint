@@ -1,36 +1,42 @@
 body {
-  background-color: #eb8242;
+  background-color: #a23131;
 }
 
 h1 {
   font-family: "Pacifico";
   font-size: 72px;
-  color: #f6da63;
+  color: #a1dd70;
 }
 
 h2 {
+  text-align: center; 
+  color: #e8ecd6;
   font-family: "Montserrat";
-  color: #9d0b0b;
+}
+
+.jumbotron h2 {
+  font-family: "Montserrat";
+  color: #a23131;
   text-align: center;
 }
 
 h3 {
   font-family: "Montserrat";
-  color: #da2d2d;
+  color: #a23131;
 }
 
 p {
   font-family: "Montserrat";
-  color: #da2d2d;
+  color: #a23131;
 }
 
 label {
   font-family: "Montserrat";
-  color: #da2d2d;
+  color: #e8ecd6;
 }
 
 hr {
-  border-color: #da2d2d;
+  border-color: #a1dd70;
   border-style: dotted none none;
   height: 0;
   width: 10%;
@@ -39,16 +45,13 @@ hr {
 }
 
 .jumbotron {
-  background-color: #9d0b0b;
+  margin-top: 25px;
+  background-color: fdfff0;
   text-align: center;
 }
 
-.card-header {
-  font-family: "Pacifico";
-}
-
 .card {
-  background-color: #f6da63;
+  background-color: #e8ecd6;
 }
 
 .row {
@@ -66,8 +69,10 @@ hr {
 
 #price-footer {
   text-align: center;
-  background-color: #9d0b0b;
+  background-color: #e8ecd6;
   display: none;
+  padding-bottom: 15px;
+  border-radius: 15px;;
 }
 
 #second-pizza-form {
@@ -76,5 +81,5 @@ hr {
 }
 
 .total-dollars, .dollar-sign {
-  color: #f6da63;
+  color: #a1dd70;
 }
