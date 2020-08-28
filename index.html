@@ -4,6 +4,7 @@
   <title>Donny's Pizza Joint</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
   <script src="js/jquery-3.5.1.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -13,29 +14,25 @@
 <body>
 <div class="container">
   <div class = "jumbotron">
-
+    <h1>Donny's Pizza Joint!</h1>
+    <p>Probably the Best Pizza You'll Eat Today</p>
   </div>
   <form id="pizzaForm">
     <div class="form-group">
-      <div class="radio">
-        <label>
+        <label class="radio-inline">
           <input type="radio" name="size" value="12" checked>
           Small
         </label>
-      </div>
-      <div class="radio">
-        <label>
+      
+        <label class="radio-inline">
           <input type="radio" name="size" value="16">
           Medium
         </label>
-      </div>
-      <div class="radio">
-        <label>
+        <label class="radio-inline">
           <input type="radio" name="size" value="20">
           Large
-        </label>
-      </div>
-      <div>
+        </label><br>
+       
         <input type="checkbox" id="pepperoni" name="toppings" value="3">
         <label for="pepperoni">Pepperoni</label><br>
         <input type="checkbox" id="sausage" name="toppings" value="3">
