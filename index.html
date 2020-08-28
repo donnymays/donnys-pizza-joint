@@ -16,25 +16,37 @@
 
   </div>
   <div class="pizzaForm">
-    <div class="form-group">
-      <label for="name">What's Your Name?</label>
-      <input id="name" class="form-control" type="text">
-      <label for="address">What's Your Address?</label>
-      <input id="address" class="form-control" type="text">
+    <div class="radio">
+      <label>
+        <input type="radio" name="size" value="12" checked>
+        Small
+      </label>
     </div>
-    <div class="input-group mb-3">
-      <select class="custom-select" id="size" name="size">
-        <option selected value="">Small</option>
-        <option value="Medium">Medium</option>
-        <option value="Large">Large</option>
-        <option value="MEGA PIZZA">MEGA PIZZA</option>
-      </select>
-      <select class="custom-select" id="toppings" name="toppingsSelect">
-        <option value="Pepperoni">Pepperoni</option>
-        <option value="Sausage">Sausage</option>
-        <option value="Mushroom">Mushroom</option>
-      </select>
-      <button type="submit" class="btn btn-outline-danger">Buy Now!</button>
+    <div class="radio">
+      <label>
+        <input type="radio" name="size" value="16">
+        Medium
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="size" value="20">
+        Large
+      </label>
+    </div>
+    <input type="checkbox" id="pepperoni" name="toppings" value="3">
+    <label for="pepperoni">Pepperoni</label><br>
+    <input type="checkbox" id="sausage" name="toppings" value="3">
+    <label for="sausage">Sausage</label><br>
+    <input type="checkbox" id="ham" name="toppings" value="3">
+    <label for="ham">Ham</label><br>
+    <input type="checkbox" id="peppers" name="toppings" value="2">
+    <label for="peppers">Banana Peppers</label><br>
+    <input type="checkbox" id="mushrooms" name="toppings" value="2">
+    <label for="mushrooms">Mushrooms</label><br>
+    <input type="checkbox" id="arugula" name="toppings" value="2">
+    <label for="arugula">Arugula</label><br>
+    <button type="submit" class="btn btn-outline-danger">Order!</button>
       
       
     <div>
