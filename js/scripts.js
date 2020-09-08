@@ -1,15 +1,16 @@
-function PizzaOrder(size, toppings) {
+function PizzaOrder(size, toppings, totalPrice) {
   this.size = size;
   this.toppings = [];
+  this.totalPrice = totalPrice;
 }
 
 PizzaOrder.prototype.pizzaTotal = function(toppingArr) {
   let toppingTotal = 0;
   for (i=0; i < toppingArr.length; i++) {
     toppingTotal += toppingArr[i];
-  }
-  let pizzaTotal = toppingTotal + this.size
-  return pizzaTotal;
+  };
+  this.totalPrice = toppingTotal + this.size
+  return this.totalPrice;
 };
 
 $(document).ready(function()  {
@@ -31,10 +32,10 @@ $(document).ready(function()  {
       pizzaOrdered.toppings.push(parseInt($(this).val()));
     });
     
-    let orderTotal = pizzaOrdered.pizzaTotal(pizzaOrdered.toppings);
+    pizzaOrdered.totalPrice = pizzaOrdered.pizzaTotal(pizzaOrdered.toppings);
     
     $("span#order-name").text(inputtedName);
-    $("span#totalPrice").text(orderTotal);
+    $("span#totalPrice").text(pizzaOrdered.totalPrice);
     $("span#delivery-address").text(inputtedAddress);
   });
 });

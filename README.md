@@ -1,6 +1,6 @@
 # _Donny's Pizza Joint_
 
-#### _Object Oriented Javascript Project, Created 8.28.2020 Last update 8.28.2020_
+#### _Object Oriented Javascript Project, Created 8.28.2020 Last update 9.7.2020_
 
 #### By _**Donny Mays**_
 
@@ -8,9 +8,20 @@
 
 _This is a site designed to take a pizza order from a user and confirm their order by returning a modal with their name, address, and order total.  The order total is calcualted by adding values obtained from the users selections of pizza size and toppings options._
 
+
+##Specifications
+
+|  Spec | Input  | Output  |
+|---|---|---|
+| Output can  correctly calculate the cost of a pizza size without toppings | Small Pizza | $12 |
+| Output can  correctly calculate the cost of a pizza size with one topping | Small Pizza - Pepperoni | $15 |
+| Output can  correctly calculate the cost of two pizzas without toppings | One Small Pizza, One Medium Pizza | $28 |
+| Output can  correctly calculate the cost of two pizzas with toppings| Small Pizza - Pepperoni, Medium Pizza - Mushrooms | $33 |
+
+
 ## Setup/Installation Requirements
 
-* _To view this project as a website visit: https://donnymays.github.io/donnys-pizza-joint/ _
+* _To view this project as a website visit: https://donnymays.github.io/donnys-pizza-joint/_
 * _To view and/or edit the files for this project:_
 * _Open a command line tool_
 * _Navigate to the desktop (or whatever directory you'd like to save the files) using the cd command_
